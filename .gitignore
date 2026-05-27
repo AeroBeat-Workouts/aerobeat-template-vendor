@@ -1,12 +1,7 @@
 # Godot 4+ specific ignores
 .godot/
-.nomedia
-
-# Godot-specific ignores
 .import/
-export.cfg
-export_credentials.cfg
-*.tmp
+export_presets.cfg
 
 # Imported translations (automatically generated from CSV files)
 *.translation
@@ -15,3 +10,20 @@ export_credentials.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+# System specific
+.DS_Store
+Thumbs.db
+
+# GodotEnv package workbench
+.testbed/addons/*
+!.testbed/addons/.editorconfig
+.testbed/.addons/
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
+
+# Godot UID sidecars
+*.uid
