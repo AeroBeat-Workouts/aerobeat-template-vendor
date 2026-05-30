@@ -7,7 +7,7 @@
       "source": "symlink",
       "subfolder": "/"
     },
-    // Tool-template bootstrap pins the shared tool/workflow contract.
+    // Vendor-template bootstrap pins the shared tool/workflow contract when the adapter needs it.
     // `main` is intentional until aerobeat-tool-core starts tagging releases.
     "aerobeat-tool-core": {
       "url": "git@github.com:AeroBeat-Workouts/aerobeat-tool-core.git",
