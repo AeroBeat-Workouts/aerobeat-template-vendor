@@ -34,5 +34,5 @@ func test_plugin_cfg_description_stays_vendor_specific() -> void:
 func test_addons_manifest_keeps_expected_dependencies_only() -> void:
 	var manifest_text := _read_repo_file(ADDONS_MANIFEST_PATH)
 	assert_true(manifest_text.contains('"aerobeat-tool-core"'), "addons manifest should pin aerobeat-tool-core when vendor repos need shared tool/workflow contracts")
-	assert_true(manifest_text.contains('"gut"'), "addons manifest should pin gut for repo-local tests")
+	assert_true(manifest_text.contains('"aerobeat-vendor-godot-unit-test"'), "addons manifest should pin the vendor unit-test addon for repo-local tests")
 	assert_false(manifest_text.contains('"aerobeat-core"'), "addons manifest should not reintroduce stale aerobeat-core drift")

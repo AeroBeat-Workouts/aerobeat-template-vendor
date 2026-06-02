@@ -63,7 +63,7 @@ cd .testbed
 godotenv addons install
 cd ..
 godot --headless --path .testbed --import
-godot --headless --path .testbed --script addons/gut/gut_cmdln.gd \
+godot --headless --path .testbed --script addons/aerobeat-vendor-godot-unit-test/gut_cmdln.gd \
   -gdir=res://tests \
   -ginclude_subdirs \
   -gexit
